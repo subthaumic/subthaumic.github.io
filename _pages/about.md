@@ -2,25 +2,31 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: >
+  Physics, Maths, Science, "Moto"
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: main.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Mathematikon 02/232 & 5/203</p>
+    <p>Im Neuenheimer Feld 205</p>
+    <p>69120 Heidelberg</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I'm a Postdoc based at the Institute for Mathematics, Heidelberg University.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I recently finished my PhD in Mathematical Physics, where I explored connections between topologically twisted supersymmetric field theories, Floer theories, and knot homologies.
+However, I'm generally fascinated by the unreasonably effectiveness of abstract mathematical ideas in the natural sciences -- and vice versa. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**Currently**, my main project revolves around geometric neighbour embeddings, with the goal of extracting dynamical information from single cell RNA velocity data during cell differentiation.
+
+I'm involved in [STRUCTURES EP Math and Data](https://wiki.structures.mathi.uni-heidelberg.de/index.php/Main_Page) at Heidelberg University, which explores new developments in topological data analysis and geometric machine learning.
+
+I have contributed to the creation of [CoVtRec](https://tdalife.github.io/covtrec/), which utilizes persistent homology to gain insights into the evolution of Sars-CoV-2.
