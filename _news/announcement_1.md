@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My new website went online! :sparkles: :smile:
+My new website just went online! :sparkles: :smile:
