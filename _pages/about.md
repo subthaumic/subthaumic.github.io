@@ -26,4 +26,4 @@ I recently finished my PhD in Mathematical Physics on connections between topolo
 
 **Currently**, I'm switching gears and my **new project** revolves around geometric neighbour embeddings, with the goal of extracting dynamical information from single cell RNA velocity data during cell differentiation.
 
-In general, I'm fascinated by the unreasonably effectiveness of abstract mathematical ideas in the natural sciences -- and vice versa.
+In general, I'm fascinated by the unreasonable effectiveness of abstract mathematical ideas in the natural sciences -- and vice versa.
