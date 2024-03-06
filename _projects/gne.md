@@ -1,7 +1,7 @@
 ---
 layout: page
 title: gNE 
-description: Python package for geometric Neighbour Embeddings *-- in preparation*
+description: Python package for geometric Neighbour Embeddings
 img: assets/img/bunny.jpg
 category: geometric machine learning
 ---

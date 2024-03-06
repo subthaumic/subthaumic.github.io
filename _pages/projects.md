@@ -4,11 +4,11 @@ title: projects
 permalink: /projects/
 nav: true
 nav_order: 1
-display_categories: [geometric machine learning, applied topology, fun]
-horizontal: false
+display_categories: [geometric machine learning, applied topology, geometric analysis, fun]
+horizontal: True
 ---
 
-<!-- pages/projects.md -->
+<!-- _pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
@@ -33,7 +33,6 @@ horizontal: false
   </div>
   {%- endif -%}
   {% endfor %}
-
 {%- else -%}
 <!-- Display projects without categories -->
   {%- assign sorted_projects = site.projects | sort: "importance" -%}

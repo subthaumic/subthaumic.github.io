@@ -1,9 +1,9 @@
 ---
 layout: page
 title: RNA Velocity Embeddings
-description: 
+description: coming soon
 img:
 category: geometric machine learning
 ---
 
-*Coming soon*
+*coming soon*

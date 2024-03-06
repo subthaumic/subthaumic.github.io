@@ -1,0 +1,8 @@
+---
+layout: post
+date: 2024-01-08
+inline: true
+related_posts: false
+---
+
+I'll be visiting Andriy Haydys at HU Berlin, Jan 30 - Feb 01.
