@@ -4,8 +4,11 @@ title: gNE
 description: Python package for geometric Neighbour Embeddings
 img: assets/img/bunny.jpg
 category: geometric machine learning
+related_publications:
+related_bibliography: gne.bib
 ---
 
+*This is work in progress and the descriptions below are subject to change. The package development is still at an early stage and the github repo will remain private for now. But I'm always happy to share my progress!*
 
 Let $$X$$ be a finite subset of a Riemannian manifold $$(M,g_M)$$ and let $$(N,g_N)$$ be a chosen target Riemannian manifold. Denote by $$\phi, \psi: \mathbb{R}_{\geq 0} \to [0,1]$$ two proximity functions, i.e. functions that map distances $$d_M(x_i,x_j)$$ and $$d_N(y_i,y_j)$$ to proximities/similarities.[^1]
 
@@ -34,12 +37,14 @@ $$(X,\phi)$$ can be viewed as a complete weighted graph. Instead, as is typical 
 - Loss functions for graphs and complexes (available: Cross Entropy, Kullback-Leibler, their symmetrization, ...)
 
 - Choice of proximity function $$\phi$$ (available: Gaussian, Laplace, t-distribution, ...)
-- Offers choice of point on attraction-repulsion spectrum (available : t-SNE, UMAP-like choices on attraction-repulsion spectrum
+- Choice of point on attraction-repulsion spectrum (available: t-SNE and UMAP-like choices on attraction-repulsion spectrum)
 
 ## Standard pipeline of gNE
 
+```
 model(source geometry, target geometry)
-model(X)
+model()
+```
 
 ## Further Ideas
 
@@ -50,19 +55,14 @@ model(X)
 	- Standard maps to produce kNN-Complex, VR-Complex, ... from $$(X,d_X)$$
 	- Loss function for weighted complexes
 
-
 - For future purposes want to implement Hamiltonian dynamics on a given geometry. For this need tensors and differential forms.
 
-- parametric gNE, i.e. use $$(X, d_X) \subset (M,g_M)$$ to learn a map $$f:M \to N$$ such that one can calculate $$f(x)$$ for any $$x \in M$$ that was not originally in $$X$$.
+- parametric gNE, i.e. use $$(X, d_X) \subset (M,g_M)$$ to learn a map $$f:M \to N$$ such that one can calculate $$f(x)$$ for any $$x \in M$$ that was not originally in $$X$$. As far as I understand it, this is usually done with neural nets and relies on a completely different Ansatz. Currently I do not plan to follow up on this idea.
 
 
 
 ---
 
-[^1]:  According to %Bohm2022 the choice doesn't really matter, so could probably hard-code it to be the Cauchy similarity kernel
-
-$$
-\phi(d(x_i,x_j)) = \frac{1}{1+a d(x_i, x_j)^{2b}}
-$$
+[^1]:  According to Böhm-Berens-Kobak (2022), the choice doesn't really matter. Could probably hard-code it to be the Cauchy similarity kernel $$\phi(d(x_i,x_j)) = \frac{1}{1+a d(x_i, x_j)^{2b}}$$
 
 [^2]: Again, the choice of proximity kernel seems to be ultimately irrelevant. Typically one either uses a Gaussian kernel or binary adjacencies (in either case normalized such as to obtain a probability distribution).
