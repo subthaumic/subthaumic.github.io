@@ -20,11 +20,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hi, I'm a Postdoc based at the [Institute for Mathematics, Heidelberg University](https://www.math.uni-heidelberg.de/en), part of the [Applied Analysis and Modelling in Biosciences](http://www.biostruct.uni-hd.de/index.php) research group, and associated with [STRUCTURES](https://www.structures.uni-heidelberg.de/index.php).
+Hi, I'm a Postdoc based at the [Institute for Mathematics, Heidelberg University](https://www.math.uni-heidelberg.de/en), and associated with [STRUCTURES](https://www.structures.uni-heidelberg.de/index.php).
 
 I recently finished my PhD in Mathematical Physics on connections between topologically twisted supersymmetric field theories, Floer theories, and knot homologies under the supervision of [Johannes Walcher](https://web.mathi.uni-heidelberg.de/physmath/walcher).
 
-Currently, I'm switching gears and my **new project** revolve around geometric neighbour embeddings, with the goal of extracting dynamical information from single cell RNA velocity data during cell differentiation.
+Currently, I'm switching gears and my **new project** revolves around geometric neighbour embeddings, with the goal of extracting dynamical information from single cell RNA velocity data during cell differentiation.
+This research is part of the [Applied Analysis and Modelling in Biosciences](http://www.biostruct.uni-hd.de/index.php) group of [Anna Marciniak-Czochra](http://wwwagmarciniak.iwr.uni-heidelberg.de/folder_people/Anna.Marciniak/index.html).
 
-In general, I'm fascinated by the unreasonable effectiveness of abstract mathematical ideas in the natural sciences and vice versa. 
+In general, I'm fascinated by the unreasonable effectiveness of abstract mathematics in the natural sciences and vice versa. 
 I'm always happy to chat about new examples!
