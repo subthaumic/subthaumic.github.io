@@ -4,6 +4,8 @@ title: teaching
 permalink: /teaching/
 nav: true
 nav_order: 4
+toc:
+    sidebar: left
 ---
 
 <!-- _pages/teaching.md -->
