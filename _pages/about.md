@@ -25,7 +25,7 @@ Hi, I'm a Postdoc based at the [Institute for Mathematics, Heidelberg University
 I recently finished my PhD in Mathematical Physics on connections between topologically twisted supersymmetric field theories, Floer theories, and knot homologies under the supervision of [Johannes Walcher](https://web.mathi.uni-heidelberg.de/physmath/walcher).
 
 Currently, I'm switching gears and my **new project** revolves around geometric neighbour embeddings, with the ultimate goal of extracting dynamical information from single cell RNA velocity data during cell differentiation.
-This research is part of the [Applied Analysis and Modelling in Biosciences](http://www.biostruct.uni-hd.de/index.php) group of [Anna Marciniak-Czochra](http://wwwagmarciniak.iwr.uni-heidelberg.de/folder_people/Anna.Marciniak/index.html) and in collarboration with [Anna Wienhard](https://www.mis.mpg.de/de/people/anna-wienhard).
+This research is part of the [Applied Analysis and Modelling in Biosciences](http://www.biostruct.uni-hd.de/index.php) group of [Anna Marciniak-Czochra](http://wwwagmarciniak.iwr.uni-heidelberg.de/folder_people/Anna.Marciniak/index.html) and developed in collarboration with [Anna Wienhard](https://www.mis.mpg.de/de/people/anna-wienhard) at the [MPI MiS](https://www.mis.mpg.de/de/).
 
 In general, I'm fascinated by the unreasonable effectiveness of abstract mathematics in the natural sciences and vice versa. 
 I'm always happy to chat about new examples!
