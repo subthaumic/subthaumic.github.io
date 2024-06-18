@@ -7,7 +7,7 @@ subtitle: >
 
 profile:
   align: right
-  image: main.jpg
+  image: profile-greyscale.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Mathematikon 02/232 & 5/203</p>
