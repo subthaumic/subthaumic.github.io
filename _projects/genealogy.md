@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Academic Genealogy
-description: These are my academic ancestors and siblings.
+title: Academic Family
+description: These are my academic siblings and ancestors.
 img: /assets/img/genealogy.png
 category: fun
 ---

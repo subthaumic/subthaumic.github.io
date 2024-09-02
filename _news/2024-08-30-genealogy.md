@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-This has been a small and interesting diversion: [My Academic Genealogy](projects/genealogy)
+This has been a fun little diversion: [My Academic Family](projects/genealogy)
