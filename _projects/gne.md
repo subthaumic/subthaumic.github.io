@@ -6,9 +6,11 @@ img: assets/img/bunny.jpg
 category: geometric machine learning
 related_publications:
 related_bibliography: gne.bib
+related_repositories: https://github.com/subthaumic/gne
 ---
 
-*This is work in progress and the descriptions below are subject to change. The package development is still at an early stage and the github repo will remain private for now. But I'm always happy to share my progress!*
+*This is work in progress and the description below is subject to change.*
+*The package development is still at an early stage and can be found [here](https://github.com/subthaumic/gne).*
 
 Let $$X$$ be a finite subset of a Riemannian manifold $$(M,g_M)$$ and let $$(N,g_N)$$ be a chosen target Riemannian manifold. Denote by $$\phi, \psi: \mathbb{R}_{\geq 0} \to [0,1]$$ two proximity functions, i.e. functions that map distances $$d_M(x_i,x_j)$$ and $$d_N(y_i,y_j)$$ to proximities/similarities.[^1]
 
