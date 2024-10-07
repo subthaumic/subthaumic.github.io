@@ -3,42 +3,13 @@ layout: page
 title: teaching
 permalink: /teaching/
 nav: true
-nav_order: 4
+nav_order: 5
 toc:
     sidebar: left
 ---
 
 <!-- _pages/teaching.md -->
 <div class="teaching">
-
-  <!-- Get classes and extract terms in which there was a class -->
-<!--
-  {%- assign classes = site.teaching -%}
-
-  {% assign sorted_terms = "" %}
-  {% assign years = "" %}
-
-  {% for class in classes %}
-    {% unless years contains class.term %}
-      {% assign year = class.term | split: " " | last %}
-      {% assign years = years | append: year | append: ", " %}
-    {% endunless %}
-  {% endfor %}
-
-  {% assign unique_years = years | split: ", " | uniq | sort %}
-
-  {% for year in unique_years %}
-    {% assign year_terms = classes | where_exp: "item", "item.term contains year" %}
-    {% for term in year_terms %}
-      {% unless sorted_terms contains term.term %}
-        {% assign sorted_terms = sorted_terms | append: term.term | append: ", " %}
-      {% endunless %}
-    {% endfor %}
-  {% endfor %}
-
-  {% assign sorted_unique_terms = sorted_terms | split: ", " | uniq | reverse %}
--->
-  
 
   {%- assign classes = site.teaching -%}
 
@@ -97,6 +68,5 @@ toc:
     </div>
     </div>
   {% endfor %}
-
 
 </div>

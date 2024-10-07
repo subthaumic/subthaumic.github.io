@@ -3,7 +3,7 @@ layout: page
 permalink: /repos/
 title: repos
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 {% if site.data.repositories.github_users %}
