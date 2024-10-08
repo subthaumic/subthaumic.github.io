@@ -9,62 +9,48 @@ related_bibliography: gne.bib
 related_repositories: https://github.com/subthaumic/gne
 ---
 
-*This is work in progress and the description below is subject to change.*
-*The package development is still at an early stage and can be found [here](https://github.com/subthaumic/gne).*
+*This is work in progress, the description below will likely be subject to substantial changes.* <br>
 
-Let $$X$$ be a finite subset of a Riemannian manifold $$(M,g_M)$$ and let $$(N,g_N)$$ be a chosen target Riemannian manifold. Denote by $$\phi, \psi: \mathbb{R}_{\geq 0} \to [0,1]$$ two proximity functions, i.e. functions that map distances $$d_M(x_i,x_j)$$ and $$d_N(y_i,y_j)$$ to proximities/similarities.[^1]
+This project introduces and explores geometric Neighbour Embeddings (gNE -- */ˈdʒ:ɪni/*, like Genie from Aladdin), a method for dimensionality reduction that aims to preserve geometric structures more faithfully than standard methods.
 
-gNE (*/ˈdʒ:ɪni/*, like Genie from Aladdin) then finds an embedding
+Similar to traditional Neighbour Embeddings like t-SNE and UMAP, gNE seeks to maintain the neighbour relationships present in high-dimensional data.
+However, gNE modifies these approaches in two ways: It extends beyond pairwise affinities and instead aims to preserve geometric properties like distances, areas, and volumes of higher-order neighbour relations.
+The resulting embeddings are intended to be more geometrically interpretable, such that they can facilitate downstream tasks on the low-dimensional representation, like dynamical inference.
+
+An early implementation of these ideas is available as python package ```gNE``` [on GitHub](https://github.com/subthaumic/gne).
+
+## 
+
+Let $$X$$ be a finite subset of a Riemannian manifold $$(M,g_M)$$ and let $$(N,g_N)$$ be a chosen target Riemannian manifold.
+
+We then want to find an embedding
 
 $$
 f: X \hookrightarrow (N,g_N)
 $$
 
-that tries to preserve neighbour proximities: $$\phi( d_M(x_i, x_j) ) \simeq \psi(d_N(y_i,y_j))$$ by minimizing a specified Loss function $$\mathcal{L}(\phi(X), \psi(Y))$$, where $$Y=f(X)$$. By default this is cross entropy (or equivalently Kullback-Leibler divergence, since $$\phi(d_M(x_i,x_j))$$ is constant)
+that tries to preserve the geometric properties of ($$k$$-nearest) neighbourhoods in $$X$$.
+
+The higher-order neighbour relations in $$X$$ and $$Y = f(X)$$ are modeled by \textit{weighted simplicial complexes} $$(K_X, w_X)$$ and $$(K_Y, w_Y)$$.
+The weight functions $$w_X$$ and $$w_Y$$ associate geometric quantities, as determined by $$g_N$$ and $$g_M$$, to each simplex.
+For example distances for 1-simplices (edges), areas for 2-simplices (triangles), volumes for 3-simplices (tetrahedra).
+
+In complete analogy to standard Neighbour Embeddings, gNE then factors through a comparison of $$(K_X, w_X)$$ and $$(K_Y, \tilde{w}_Y)$$.
+The general structure of the loss function is given by a simplex-wise comparison of weights:
 
 $$
-\mathcal L_{\mathrm{KL}}(X,Y) = - \sum_{i,j} \phi(d_M(x_i,x_j)) \log \psi(d_N(y_i,y_j))
+  \mathcal{L}(K_X, K_Y) 
+    = \lambda_0 \sum_{i} \mathcal{L}_0 (w_i ,\tilde w_i) 
+    + \lambda_1 \sum_{i,j} \mathcal{L}_1 (w_{ij}, \tilde{w}_{ij}) 
+    + \lambda_2 \sum_{i,j,k} \mathcal{L}_2 (w_{ijk}, \tilde{w}_{ijk}) 
+    + \ldots
 $$
 
-$$(X,\phi)$$ can be viewed as a complete weighted graph. Instead, as is typical in neighbourhood embeddings, gNE by default considers only the kNN-Graph weighted by the proximities determined by $$\phi$$.[^2]
+Here $$\lambda_i \in \mathbb{R}$$ are hyperparameters that fix the relative importance of the simplices of various dimensionalities, $$\mathcal{L}_i$$ are loss functions (e.g. $$L^2$$), and we used abbreviations of the form $$w_{ij} = w_X({x_i,x_j})$$ and $$\tilde{w}_{ij}=w_Y({y_i,y_j})$$.
 
-## Features
-
-- Model geometries (Euclidean, Hyperbolic, Sphere, SPD, and their products)
-- Custom geometries via specification of Riemannian metric $$g_M$$, specified in some high dimensional $$\mathbb{R}^n$$. Get geodesic distances from this.
-  (available: Sasakian metric on tangent bundle)
-- Finite metric spaces $$(X,d_X)$$
-- Weighted graphs $$(G,w_G)$$
-- Standard maps from finite metric space$$(X,d_X)$$  to e.g. weighted kNN-Graph, VR-Graph, ...
-- Loss functions for graphs and complexes (available: Cross Entropy, Kullback-Leibler, their symmetrization, ...)
-
-- Choice of proximity function $$\phi$$ (available: Gaussian, Laplace, t-distribution, ...)
-- Choice of point on attraction-repulsion spectrum (available: t-SNE and UMAP-like choices on attraction-repulsion spectrum)
-
-## Standard pipeline of gNE
-
-```
-model(source geometry, target geometry)
-model()
-```
 
 ## Further Ideas
-
-- provide an implementation for weighted complexes! In the loss function can e.g. use generalization from sum over edges $$\sum_{i,j} = \sum_{e}$$ to a sum over all simplices. In that case minimizing the loss function should not only keep pairwise proximities similar, but also keep n-ary proximities.
-  Note that in analogy of loss function for edges, one can ask about geometric properties of higher simplices, e.g. area or volume of the simplex in target space. 
-  Needs implementation of
-	- Weighted complexes $$(C,w_C)$$
-	- Standard maps to produce kNN-Complex, VR-Complex, ... from $$(X,d_X)$$
-	- Loss function for weighted complexes
 
 - For future purposes want to implement Hamiltonian dynamics on a given geometry. For this need tensors and differential forms.
 
 - parametric gNE, i.e. use $$(X, d_X) \subset (M,g_M)$$ to learn a map $$f:M \to N$$ such that one can calculate $$f(x)$$ for any $$x \in M$$ that was not originally in $$X$$. As far as I understand it, this is usually done with neural nets and relies on a completely different Ansatz. Currently I do not plan to follow up on this idea.
-
-
-
----
-
-[^1]:  According to Böhm-Berens-Kobak (2022), the choice doesn't really matter. Could probably hard-code it to be the Cauchy similarity kernel $$\phi(d(x_i,x_j)) = \frac{1}{1+a d(x_i, x_j)^{2b}}$$
-
-[^2]: Again, the choice of proximity kernel seems to be ultimately irrelevant. Typically one either uses a Gaussian kernel or binary adjacencies (in either case normalized such as to obtain a probability distribution).
