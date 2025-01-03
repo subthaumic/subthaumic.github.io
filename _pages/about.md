@@ -10,7 +10,7 @@ profile:
   image: profile-greyscale.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Mathematikon 02/232 & 5/203</p>
+    <p>Mathematikon 02/232</p>
     <p>Im Neuenheimer Feld 205</p>
     <p>69120 Heidelberg</p>
 
