@@ -70,6 +70,7 @@ github_username: subthaumic # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: subthaumic # your X handle
 mastodon_username: mathstodon.xyz/@subthaumic # your mastodon instance+username in the format instance.tld/@username
+bluesky: subthaumic.bsky.social # your Bluesky username in the format username.bsky.social
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: PchAbTkAAAAJ # your Google Scholar ID
