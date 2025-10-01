@@ -14,12 +14,12 @@ related_repositories: https://github.com/subthaumic/gne
 This project introduces and explores geometric Neighbour Embeddings (gNE -- */ˈdʒ:ɪni/*, like Genie from Aladdin), a method for dimensionality reduction that aims to preserve geometric structures more faithfully than standard methods.
 
 Similar to traditional Neighbour Embeddings like t-SNE and UMAP, gNE seeks to maintain the neighbour relationships present in high-dimensional data.
-However, gNE modifies these approaches in two ways: It extends beyond pairwise affinities and instead aims to preserve geometric properties like distances, areas, and volumes of higher-order neighbour relations.
+However, gNE modifies this as follows: It extends beyond pairwise affinities and instead aims to preserve geometric properties like distances, areas, and volumes of higher-order neighbour relations.
 The resulting embeddings are intended to be more geometrically interpretable, such that they can facilitate downstream tasks on the low-dimensional representation, like dynamical inference.
 
 An early implementation of these ideas is available as python package ```gNE``` [on GitHub](https://github.com/subthaumic/gne).
 
-## 
+## Motivation
 
 Let $$X$$ be a finite subset of a Riemannian manifold $$(M,g_M)$$ and let $$(N,g_N)$$ be a chosen target Riemannian manifold.
 
