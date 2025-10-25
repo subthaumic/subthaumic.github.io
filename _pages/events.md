@@ -29,7 +29,7 @@ toc:
   <!-- Display events by year -->
   {% for year in sorted_years %}
     {% if year != "" %}
-      <h2 class="talks"> {{ year }}</h2>
+      <h2 class="talks" id="year-{{ year }}"> {{ year }}</h2>
 
       <!-- Generate cards for each event -->
       <div class="container">
