@@ -1,0 +1,77 @@
+<div class="card-item col">
+  {%- if event.redirect -%}
+  <a href="{{ event.redirect }}">
+  {%- elsif event.details -%}
+  <a href="{{ event.url | relative_url }}">
+  {%- endif -%}
+    <div class="card hoverable">
+      <div class="row g-0">
+        {%- if event.img -%}
+        <div class="card-img col-md-6">
+            {% include figure.html path=event.img sizes="(min-width: 768px) 156px, 50vw" alt="event thumbnail" %}
+        </div>
+        <div class="col-md-6">
+        {%- else -%}
+        <div class="col-md-12">
+        {%- endif -%}
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title">{{ event.title }}</h4>
+
+            <!-- Venue and Date -->
+            {% assign event_location = event.location | default: event.venue %}
+            {% if event_location or event.date %}
+              <p class="card-text">
+                {% if event_location %}
+                  <strong>{{ event_location }}</strong><br>
+                {% endif %}
+                {% if event.date %}
+                  <i>{{ event.date }}</i>
+                {% endif %}
+              </p>
+            {% endif %}
+
+            <!-- Organizers -->
+            {% if event.people %}
+              <p class="card-text">
+                <strong>Organizers:</strong>
+                {{ event.people }}
+              </p>
+            {% endif %}
+
+            <!-- Optional link to slides -->
+            {%- if event.slides -%}
+              <p class="card-text"><a href="{{ event.slides }}">Slides</a></p>
+            {%- endif -%}
+
+            <!-- Optional abstract with expand/collapse -->
+            {%- if event.abstract -%}
+              <div class="abstract">
+                <a href="#" class="expand-link" onclick="toggleAbstract('abstract-{{ forloop.index }}'); return false;">
+                  Abstract
+                </a>
+                <p id="abstract-{{ forloop.index }}" class="card-text abstract-text" style="display:none;">
+                  {{ event.abstract }}
+                </p>
+              </div>
+            {%- endif -%}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- if event.redirect or event.details -%}
+  </a>
+  {%- endif -%}
+</div>
+
+<script>
+  function toggleAbstract(abstractId) {
+    var abstract = document.getElementById(abstractId);
+    if (abstract.style.display === "none") {
+      abstract.style.display = "block";
+    } else {
+      abstract.style.display = "none";
+    }
+  }
+</script>

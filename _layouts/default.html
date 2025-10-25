@@ -4,7 +4,16 @@
   <!-- Head -->
   <head>
   {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+  {%- assign redirect_url = page.redirect -%}
+  {%- if redirect_url == true -%}
+    {%- assign redirect_url = site.baseurl | append: '/404.html' -%}
+  {%- elsif redirect_url contains '://' -%}
+    {%- assign redirect_url = redirect_url -%}
+  {%- else -%}
+    {%- assign redirect_url = redirect_url | relative_url -%}
+  {%- endif -%}
+  <meta http-equiv='refresh' content='0; url={{ redirect_url }}' />
+  <script>window.location.replace('{{ redirect_url }}');</script>
   {%- endif -%}
   {% include head.html %}
   </head>
