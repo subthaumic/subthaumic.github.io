@@ -2,7 +2,7 @@
 layout: page
 permalink: /repos/
 title: repos
-nav: true
+nav: false
 nav_order: 2
 ---
 

@@ -18,24 +18,45 @@
             <!-- Title -->
             <h4 class="card-title">{{ event.title }}</h4>
 
+            <!-- Talk details -->
+            {% if event.talk_title or event.speaker %}
+              <p class="card-text">
+                {% if event.talk_title %}
+                  <em>{{ event.talk_title }}</em>{% if event.speaker %}<br>{% endif %}
+                {% endif %}
+                {% if event.speaker %}
+                  {{ event.speaker }}
+                {% endif %}
+              </p>
+            {% endif %}
+
             <!-- Venue and Date -->
             {% assign event_location = event.location | default: event.venue %}
-            {% if event_location or event.date %}
+            {% assign event_sort_date = event.sort_date | default: event.date %}
+            {% assign event_display_date = event.date_display | default: event_sort_date %}
+            {% if event_location or event_display_date %}
               <p class="card-text">
                 {% if event_location %}
                   <strong>{{ event_location }}</strong><br>
                 {% endif %}
-                {% if event.date %}
-                  <i>{{ event.date }}</i>
+                {% if event_display_date %}
+                  <i>
+                    {% if event.date_display %}
+                      {{ event_display_date }}
+                    {% else %}
+                      {{ event_display_date | date: "%B %d, %Y" }}
+                    {% endif %}
+                  </i>
                 {% endif %}
               </p>
             {% endif %}
 
             <!-- Organizers -->
-            {% if event.people %}
+            {% assign event_organizers = event.organizers | default: event.people %}
+            {% if event_organizers %}
               <p class="card-text">
                 <strong>Organizers:</strong>
-                {{ event.people }}
+                {{ event_organizers }}
               </p>
             {% endif %}
 

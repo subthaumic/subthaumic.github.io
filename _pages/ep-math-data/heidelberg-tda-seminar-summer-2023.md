@@ -25,16 +25,19 @@ The goal of this seminar is to bring together people from various backgrounds wh
 - **Contact:** [structures-hiwi@mathi.uni-heidelberg.de](mailto:structures-hiwi@mathi.uni-heidelberg.de)
 
 ## Schedule
-- **27 Apr** – Preliminary meeting (exceptionally in SR Statistik 02.104)
-- **04 May** – No session
-- **11 May** – *Persistent homology of quantum entanglement* (based on arXiv:2110.10214) — Daniel Spitz
-- **18 May** – No session (Ascension Day)
-- **25 May** – *Metrising multiparameter modules* — Lukas Waas
-- **01 Jun** – Seminar cancelled
-- **08 Jun** – No session (Corpus Christi)
-- **15 Jun** – *An introduction to machine learning for mathematicians* — Sebastian Damrich
-- **22 Jun** – *Enhancing computational astrophysics with interpretable machine learning* — Tobias Buck
-- **29 Jun** – No session
-- **06 Jul** – *On-the-hands coding with TDA and machine learning* — Lukas Hahn
-- **13 Jul** – *Learning representations of symbolic data in symmetric spaces* — Michael Bleher
-- **20 Jul** – *Mayer–Vietoris for persistent homology* (Structures Days poster session) — Freya Bretz
+
+| Date | Topic | Speaker |
+| --- | --- | --- |
+| 27 Apr 2023 | Preliminary meeting (exceptionally in SR Statistik 02.104) | |
+| 04 May 2023 | No session | |
+| 11 May 2023 | *Persistent homology of quantum entanglement* (based on arXiv:2110.10214) | Daniel Spitz |
+| 18 May 2023 | No session (Ascension Day) | |
+| 25 May 2023 | *Metrising multiparameter modules* | Lukas Waas |
+| 01 Jun 2023 | Seminar cancelled | |
+| 08 Jun 2023 | No session (Corpus Christi) | |
+| 15 Jun 2023 | *An introduction to machine learning for mathematicians* | Sebastian Damrich |
+| 22 Jun 2023 | *Enhancing computational astrophysics with interpretable machine learning* | Tobias Buck |
+| 29 Jun 2023 | No session | |
+| 06 Jul 2023 | *On-the-hands coding with TDA and machine learning* | Lukas Hahn |
+| 13 Jul 2023 | *Learning representations of symbolic data in symmetric spaces* | Michael Bleher |
+| 20 Jul 2023 | *Mayer–Vietoris for persistent homology* (Structures Days poster session) | Freya Bretz |

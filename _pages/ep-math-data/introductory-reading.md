@@ -31,5 +31,3 @@ A thorough introduction to the field and approaches of computational topology. E
 A general overview of persistent homology with an eye towards applications of different numerical libraries. In the supplementaries starting points for own numerical steps are given. Otter et al: _A roadmap for the computation of persistent homology_.
 
 The mapper algorithm. Singh et al: _Topological methods for the analysis of high dimensional data sets and 3d object recognition._
-
-## References

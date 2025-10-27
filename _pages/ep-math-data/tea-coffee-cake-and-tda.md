@@ -1,19 +1,21 @@
 ---
 layout: page
-title: events
-permalink: /events/
-nav: true
-nav_order: 5
-toc:
-    sidebar: left
+title: Tea, Coffee, Cake & TDA
+permalink: /projects/ep-math-data/tea-coffee-cake-and-tda/
+description: Talk series hosted by EP Mathematics and Data.
+# toc:
+#   sidebar: left
 ---
+
+Tea, Coffee, Cake & TDA is a talk series organised by the EP Mathematics and Data to provide a platform to present current work in topological data analysis.  
+
+
 
 <!-- _pages/events.md -->
 <div class="talks">
 
-  <!-- Get events and sort them by date -->
-  {%- assign events = site.events | sort: 'sort_date' | reverse -%}
-
+  <!-- get CCTDA events and sort them by date-->
+  {% assign events = site.events | where: "short_title", "CCTDA" | sort: "sort_date" %}
   {% assign years = "" %}
 
   <!-- Extract unique years from the events -->

@@ -8,8 +8,10 @@ display_categories: [geometric machine learning, applied topology, geometric ana
 horizontal: True
 ---
 
-<!-- _pages/projects.md -->
+
+
 <div class="projects">
+<!-- Projects -->
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
@@ -53,4 +55,15 @@ horizontal: True
   </div>
   {%- endif -%}
 {%- endif -%}
+
+<!-- Repositories -->
+{% if site.data.repositories.github_repos %}
+  <h2 class="category">repositories</h2>
+  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+    {% for repo in site.data.repositories.github_repos %}
+      {% include repository/repo.html repository=repo %}
+    {% endfor %}
+  </div>
+{% endif %}
+
 </div>

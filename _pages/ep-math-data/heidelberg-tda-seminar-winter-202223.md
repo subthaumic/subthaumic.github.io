@@ -25,17 +25,20 @@ The goal of this seminar is to bring together people from various backgrounds wh
 - **Contact:** [structures-hiwi@mathi.uni-heidelberg.de](mailto:structures-hiwi@mathi.uni-heidelberg.de)
 
 ## Schedule
-- **20 Oct** – Preliminary meeting
-- **27 Oct** – *Persistent homology estimates the contribution of recombination to genetic diversity* — Jonas Fehrenbach
-- **03 Nov** – No session
-- **10 Nov** – No session
-- **17 Nov** – *Topologically faithful image segmentation via induced matching of persistence barcodes* (OpenReview a3-QYAgcDBl) — Maximilian Schmahl
-- **24 Nov** – No session
-- **01 Dec** – *On the universality of random persistence diagrams* (arXiv:2207.03926) — Daniel Spitz
-- **08 Dec** – *Signed barcodes* — Michael Bleher
-- **15 Dec** – *How to stratify a point cloud* — Lukas Waas
-- **22 Dec** – No session
-- **12 Jan** – *On the topology of financial markets and other time series data* (arXiv:1703.04385) — Lukas Hahn
-- **19 Jan** – *Universality in O(N) symmetric scalar field theories via persistent homology* — Victoria Noel
-- **26 Jan** – *Mayer–Vietoris spectral sequence and the extension problem* — Álvaro Torras Casas
-- **02 Feb** – *Künneth formulae in persistent homology* (arXiv:1910.05656) — Freya Bretz
+
+| Date | Topic | Speaker |
+| --- | --- | --- |
+| 20 Oct 2022 | Preliminary meeting | |
+| 27 Oct 2022 | *Persistent homology estimates the contribution of recombination to genetic diversity* | Jonas Fehrenbach |
+| 03 Nov 2022 | No session | |
+| 10 Nov 2022 | No session | |
+| 17 Nov 2022 | *Topologically faithful image segmentation via induced matching of persistence barcodes* (OpenReview a3-QYAgcDBl) | Maximilian Schmahl |
+| 24 Nov 2022 | No session | |
+| 01 Dec 2022 | *On the universality of random persistence diagrams* (arXiv:2207.03926) | Daniel Spitz |
+| 08 Dec 2022 | *Signed barcodes* | Michael Bleher |
+| 15 Dec 2022 | *How to stratify a point cloud* | Lukas Waas |
+| 22 Dec 2022 | No session | |
+| 12 Jan 2023 | *On the topology of financial markets and other time series data* (arXiv:1703.04385) | Lukas Hahn |
+| 19 Jan 2023 | *Universality in O(N) symmetric scalar field theories via persistent homology* | Victoria Noel |
+| 26 Jan 2023 | *Mayer–Vietoris spectral sequence and the extension problem* | Álvaro Torras Casas |
+| 02 Feb 2023 | *Künneth formulae in persistent homology* (arXiv:1910.05656) | Freya Bretz |

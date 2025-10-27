@@ -31,6 +31,4 @@ STRUCTURES is subdivided into a network of **comprehensive projects (CP)** and *
 
 CPs, 7 of which exist within STRUCTURES, are the coarsest organizing blocks and determine the major research directions within STRUCTURES and which groups are related to it. A short description from the STRUCTURES homepage is as follows:
 "The comprehensive projects (CP) of STRUCTURES address specific major questions about structure formation, which all involve a complex interplay of physical processes over many length and time scales."
-EPs are projects of a somewhat smaller scope that are meant to investigate certain areas of expertise or probe a direction of research that might be relevant for the CPs. Examples are **EP Mathematics and Data** and **EP Dynamics**. 
-
-## References
+EPs are projects of a somewhat smaller scope that are meant to investigate certain areas of expertise or probe a direction of research that might be relevant for the CPs. Examples are **EP Mathematics and Data** and **EP Dynamics**.

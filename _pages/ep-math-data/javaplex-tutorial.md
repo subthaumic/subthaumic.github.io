@@ -42,7 +42,7 @@ ans = edu.stanford.math.plex4.streams.impl.ExplicitSimplexStream@513fd4
 
 ## Basic constructions
 ### Simplex Streams
-JavaPlex implements [abstract simplicial complexes](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=abstract_simplicial_complex) via _simplex streams_, which are provided by the function
+JavaPlex implements [abstract simplicial complexes](https://en.wikipedia.org/wiki/Abstract_simplicial_complex) via _simplex streams_, which are provided by the function
 
 api.Plex4.createExplicitSimplexStream()
 
@@ -79,9 +79,9 @@ We can get the number of simplices (of all dimension) contained in the simplicia
 ### Modular Simplicial Algorithm
 For a given simplicial complex X, the function
   api.Plex4.getModularSimplicialAlgorithm(d, p)
-provides an algorithm that can calculate the [persistence module](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=persistence_module) of homology groups H_i(X,\mathbb{Z}/p\mathbb{Z}) for all  i\leq d, together with representatives of the classes  [x]\in H_i .
+provides an algorithm that can calculate the [persistence module]({{ '/projects/ep-math-data/mathematical-background/#persistence-modules' | relative_url }}) of homology groups H_i(X,\mathbb{Z}/p\mathbb{Z}) for all  i\leq d, together with representatives of the classes  [x]\in H_i .
 
-_Note: This algorithm is used more generally for [filtered complexes](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=filtered_complexes) as discussed below. Every simplicial complex X is trivially filtered by  \mathcal{F}_t(X) = X  for all t \in \mathbb{R}._
+_Note: This algorithm is used more generally for [filtered complexes]({{ '/projects/ep-math-data/mathematical-background/#persistence-modules' | relative_url }}) as discussed below. Every simplicial complex X is trivially filtered by  \mathcal{F}_t(X) = X  for all t \in \mathbb{R}._
 
 **Example: 1-sphere**
 
@@ -126,9 +126,9 @@ We exemplify which additional methods of simplex stream objects exist, by constr
 ## Examples
 We can now use what we've learned above to investigate more complicated data sets.
 ### Periodic Helix
-![Helix embedded on a torus used for the JavaPlex example.](/assets/img/ep-math-data/HelixOnTorus.jpg)
-![A noisy set of points generated from the embedding of a periodic helix in three dimensions. The yellowish points mark landmarks used to generate a witness complex.](/assets/img/ep-math-data/HelixPointcloud.jpg)
-![The barcode generated from the witness complex of the helix point cloud, illustrating the long-lived one-dimensional homology class.](/assets/img/ep-math-data/HelixBarcode.png)
+{% include figure.html path="/assets/img/ep-math-data/HelixOnTorus.jpg" alt="Helix embedded on a torus used for the JavaPlex example." %}
+{% include figure.html path="/assets/img/ep-math-data/HelixPointcloud.jpg" alt="A noisy set of points generated from the embedding of a periodic helix in three dimensions. The yellowish points mark landmarks used to generate a witness complex." %}
+{% include figure.html path="/assets/img/ep-math-data/HelixBarcode.png" alt="The barcode generated from the witness complex of the helix point cloud, illustrating the long-lived one-dimensional homology class." %}
 
 In this example we investigate a point cloud that arises from a one-dimensional underlying manifold, that is embedded in three dimensions in the form of a helix wound around a torus.
 The point cloud is generated from the one-dimensional embedded helix with noise.
@@ -227,5 +227,3 @@ options.filename = 'lazyCycloOctane';
 options.max_filtration_value = max_filtration_value;
 options.max_dimension = max_dimension - 1;
 plot_barcodes(intervals, options);
-
-## References

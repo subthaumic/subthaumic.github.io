@@ -25,13 +25,16 @@ The goal of this seminar is to bring together people from various backgrounds wh
 - **Contact:** [structures-hiwi@mathi.uni-heidelberg.de](mailto:structures-hiwi@mathi.uni-heidelberg.de)
 
 ## Schedule
-- **19 May** – *Order parameters from persistent homology in non-Abelian gauge theory* — Daniel Spitz
-- **26 May** – No session (Ascension Day)
-- **02 Jun** – *Persistent homology and the string landscape* — Lukas Hahn
-- **09 Jun** – *Multiparameter persistent homology of flag complexes via Rips transformations* — Maximilian Neumann
-- **16 Jun** – No session (Corpus Christi)
-- **23 Jun** – No seminar (ATMCS in Oxford)
-- **30 Jun** – *Persistent homology and the search for universality in scalar field theories* — Lillian de Bruin
-- **07 Jul** – *From samples to persistent stratified homotopy types* — Tim Mäder & Lukas Waas
-- **14 Jul** – Session postponed
-- **21 Jul** – *Mayer–Vietoris sequence and persistent homology: an overview* — Freya Bretz
+
+| Date | Topic | Speaker |
+| --- | --- | --- |
+| 19 May 2022 | *Order parameters from persistent homology in non-Abelian gauge theory* | Daniel Spitz |
+| 26 May 2022 | No session (Ascension Day) | |
+| 02 Jun 2022 | *Persistent homology and the string landscape* | Lukas Hahn |
+| 09 Jun 2022 | *Multiparameter persistent homology of flag complexes via Rips transformations* | Maximilian Neumann |
+| 16 Jun 2022 | No session (Corpus Christi) | |
+| 23 Jun 2022 | No seminar (ATMCS in Oxford) | |
+| 30 Jun 2022 | *Persistent homology and the search for universality in scalar field theories* | Lillian de Bruin |
+| 07 Jul 2022 | *From samples to persistent stratified homotopy types* | Tim Mäder & Lukas Waas |
+| 14 Jul 2022 | Session postponed | |
+| 21 Jul 2022 | *Mayer–Vietoris sequence and persistent homology: an overview* | Freya Bretz |

@@ -20,7 +20,7 @@ In this tutorial we will learn how to employ the C++ library GUDHI (Geometric un
 
 A selection of promising starting points for individual applications beyond alpha shapes is given by means of links to GUDHI example codes. Additionally, on the GUDHI webpage dozens of useful code example are provided, numerically implementing a multitude of computational topology methods, http://gudhi.gforge.inria.fr/doc/latest/examples.html.
 
-This tutorial describes the numerics leading to results as in [What is Topological Data Analysis? - A Primer](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=What_is_Topological_Data_Analysis%3F_-_A_Primer).
+This tutorial describes the numerics leading to results as in [What is Topological Data Analysis? - A Primer]({{ '/projects/ep-math-data/what-is-topological-data-analysis-a-primer/' | relative_url }}).
 
 ## Installation
 To be able to compile code against the GUDHI library and in particular to run the following example, some prerequisites need to be fulfilled. The free third-party C++ libraries CGAL and Eigen3 need to be installed to create alpha shapes. To make use of the interesting multi-field persistent homology algorithm, additionally, the arbitrary-precision arithmetic library GMP needs to be installed.
@@ -43,7 +43,7 @@ The basis of any topological data analysis routine is a point cloud of data. For
    std::normal_distribution dist_normal(0.,sigma);
    double phase, x, y;
    for (long i=0; i
-GUDHI uses the Computational Geometry Algorithms Library, [CGAL](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=List_of_Software#CGAL), to compute e.g. the Delaunay complex and alpha shapes of a given point cloud. As such, point clouds need to be provided as CGAL data type objects. In the two dimensional case of interest in this tutorial the data type of pts reads std::vector >::Point_d>. 
+GUDHI uses the Computational Geometry Algorithms Library, [CGAL]({{ '/projects/ep-math-data/list-of-software/#cgal' | relative_url }}), to compute e.g. the Delaunay complex and alpha shapes of a given point cloud. As such, point clouds need to be provided as CGAL data type objects. In the two dimensional case of interest in this tutorial the data type of pts reads std::vector >::Point_d>. 
 
 ## Generating alpha shapes
 Using the GUDHI library, the following lines of code compute all alpha shapes of the point cloud pts at once. For details on the data type of pts we refer to the end of the previous subsection. 
@@ -179,5 +179,3 @@ The following code is the entire script described in the previous subsections. O
    
    return 0;
  }
-
-## References

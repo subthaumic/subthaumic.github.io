@@ -20,8 +20,8 @@ In recent years, a whole landscape of software emerged that deals with computati
 
 Packages described here include the following: 
 - CGAL (https://www.cgal.org/)
-- JavaPlex (https://github.com/appliedtopology/javaplex), [Tutorial](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=JavaPlex_Tutorial)
-- GUDHI (http://gudhi.gforge.inria.fr/), [Tutorial](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=GUDHI_Tutorial)
+- JavaPlex (https://github.com/appliedtopology/javaplex), [Tutorial]({{ '/projects/ep-math-data/javaplex-tutorial/' | relative_url }})
+- GUDHI (http://gudhi.gforge.inria.fr/), [Tutorial]({{ '/projects/ep-math-data/gudhi-tutorial/' | relative_url }})
 - Ripser (https://github.com/Ripser)
 - PHAT (https://github.com/blazs/phat)
 - Dionysus (http://www.mrzv.org/software/dionysus)
@@ -50,14 +50,14 @@ The software's webpage can be found here: https://www.cgal.org/.
 ### JavaPlex
 The basic design of JavaPlex is described in Adams et al 2014. 
 
-We provide an introductory tutorial to Javaplex on a different [page](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=JavaPlex_Tutorial). 
+We provide an introductory tutorial to Javaplex on a different [page]({{ '/projects/ep-math-data/javaplex-tutorial/' | relative_url }}). 
 
 The software's webpage can be found here: https://www.cgal.org/.
 
 ### GUDHI
 The basic design of GUDHI is described in Maria et al 2014. 
 
-We provide an introductory tutorial to using GUDHI on a different [page](https://wiki.structures.mathi.uni-heidelberg.de/index.php?title=GUDHI_Tutorial). 
+We provide an introductory tutorial to using GUDHI on a different [page]({{ '/projects/ep-math-data/gudhi-tutorial/' | relative_url }}). 
 
 The software's webpage including tons of useful example codes can be found here: http://gudhi.gforge.inria.fr/.
 
@@ -84,5 +84,3 @@ For details on the software we refer to http://www.sas.upenn.edu/~vnanda/perseus
 
 ### Rivet
 The software Rivet is described in . The software's webpage can be found here: http://rivet.online/.
-
-## References
