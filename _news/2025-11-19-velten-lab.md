@@ -1,0 +1,7 @@
+---
+layout: post
+date: 2025-11-19
+inline: true # if true, the text below is displayed inline on the homepage. If false, a link to a new page is created.
+---
+
+I'll be presenting some early work on the Euler characteristic profiles of single cell data at the [Velten Group Seminar](https://velten-group.org/) on November 27th, 2025.
