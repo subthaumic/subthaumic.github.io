@@ -32,6 +32,6 @@ This bridges interpretability, causal inference, and TDA.
 We get compact, comparable summaries of *which group of neurons does what, in which direction, under which context*.
 
 **Further reading & status.**  
-Longer story and motivation in my blog post: [*The Tangled Web They Weave*](https://open.substack.com/pub/subthaumic/p/the-tangled-web-they-weave).  
-A manuscript is in preparation; I’m happy to share a draft, just reach out.
+Longer story and motivation in my blog post: [The Tangled Web They Weave](https://open.substack.com/pub/subthaumic/p/the-tangled-web-they-weave).  
+[Early manuscript here](assets/man/tangled-web.pdf); submitted to NeurIPS 2025, not accepted. But I got some great feedback (that remains to be included).
 As always, feedback and collaboration welcome!
