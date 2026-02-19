@@ -2,8 +2,8 @@
 layout: page
 title: Riemannian Autocorrelation
 description: Extending autocorrelation functions to Riemannian manifolds with applications to non-local isoperimetric energies.
-img: assets/img/autocorrelation.png
 category: geometric analysis
+related_publications: Bleher2026a
 ---
 
 Let $$(M^n,g)$$ be a compact Riemannian manifold and $$\Omega \subset M$$ a measurable subset. We study non-local isoperimetric energies of the form

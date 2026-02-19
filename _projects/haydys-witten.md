@@ -3,7 +3,7 @@ layout: page
 title: Haydys-Witten Instantons
 description: PhD project
 category: geometric analysis
-related_publications: Bleher2023a, Bleher2023b, Bleher2023c
+related_publications: Bleher2023a, Bleher2023b, Bleher2023c, Bleher2024b, Bleher2025
 ---
 
 Haydys-Witten instantons play a crucial role in Witten's gauge theoretic approach to Khovanov homology, which provides an intriguing example of the general connection between geometric analysis and topological invariants of manifolds and knots.

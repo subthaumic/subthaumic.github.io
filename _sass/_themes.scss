@@ -45,6 +45,9 @@
   .repo-img-dark {
     display: none;
   }
+  .repo-img {
+    filter: none;
+  }
 }
 
 html[data-theme='dark'] {
@@ -89,5 +92,8 @@ html[data-theme='dark'] {
   }
   .repo-img-dark {
     display: block;
+  }
+  .repo-img {
+    filter: invert(1) hue-rotate(180deg);
   }
 }
