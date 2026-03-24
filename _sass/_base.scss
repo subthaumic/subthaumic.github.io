@@ -740,6 +740,17 @@ footer.sticky-bottom {
             border-color: var(--global-theme-color);
           }
         }
+
+        a.badge-link {
+          color: white;
+          background-color: var(--global-theme-color);
+          border-color: transparent;
+
+          &:hover {
+            color: white;
+            opacity: 0.85;
+          }
+        }
       }
 
       .badges {

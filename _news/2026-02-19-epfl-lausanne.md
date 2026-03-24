@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'll give a talk at the [EPFL Topology Seminar](https://www.epfl.ch/labs/hessbellwald-lab/) on April 2.
+I'll give a talk on [*Single cells, population dynamics, and Euler characteristic profiles*](/talks/#2026-epfl) at the [EPFL Topology Seminar](https://www.epfl.ch/labs/hessbellwald-lab/) on April 2.
