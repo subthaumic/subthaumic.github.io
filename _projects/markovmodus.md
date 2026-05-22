@@ -14,6 +14,8 @@ Within every state, transcripts follow a linear splicing model, optionally pertu
 
 ## Highlights
 - **Explicit state graphs** – build branching, cyclic, or linear topologies by supplying an adjacency mask or transition matrix; asymmetric rates let you encode directionality without extra coding.
+- **Dynamic transitions** – transition rates can be static (uniform or custom matrix) or **time- and state-dependent** via callbacks accepting `SimulationState`, enabling biologically realistic non-stationary dynamics.
+- **Stepwise simulation engine** – the `Simulation` class exposes the underlying state machine for fine-grained control when the high-level `simulate_dataset` interface is not enough.
 - **Customisable kinetics** – control gene-level marker assignments and reuse caps so neighbouring states share only the transcriptional programs you intend.
 - **Snapshot realism** – globally consistent splicing (`beta`) and decay (`gamma`) parameters pair with per-state production targets; dispersion tuning adds count noise when desired.
 - **Friendly outputs** – return AnnData objects for Scanpy workflows, pandas DataFrames for scripting, or persist directly to `.csv` and `.h5ad`.
