@@ -6,19 +6,36 @@ category: geometric machine learning
 related_repositories: https://github.com/subthaumic/markovmodus
 ---
 
-`markovmodus` generates synthetic single-cell RNA sequencing snapshots where a hidden continuous-time Markov process controls transcriptional kinetics. 
+`markovmodus` generates synthetic single-cell RNA sequencing snapshots where a hidden continuous-time Markov process controls transcriptional kinetics.
 It provides the ground-truth lineage graphs that trajectory- and velocity-inference methods try to reconstruct, making it a practical sandbox for stress-testing those pipelines.
 
-The simulator samples cell state paths on a user-defined support (from fully connected graphs to bespoke transition matrices) and assigns each state its own steady-state expression targets.
-Within every state, transcripts follow a linear splicing model, optionally perturbed by negative-binomial noise to match the over-dispersion seen in real data.
+## The model
+
+Each cell carries a hidden state $$z \in \{z_1, z_2, \ldots\}$$ that evolves as a continuous-time Markov chain on a state graph,
+
+$$
+\frac{d}{dt} p_z(t) = \sum_{z'} H_{zz'}\, p_{z'}(t),
+$$
+
+with asymmetric rates $$H_{zz'} \neq H_{z'z}$$ encoding the directionality of state transitions.
+
+The current state $$z(t)$$ determines the transcription rate $$\alpha_{z, g}$$ for each gene $$g$$, which drives a transcription–splicing–degradation process for its unspliced and spliced counts $$u_g, s_g$$:
+
+$$
+\begin{aligned}
+\frac{d u_g}{dt} &= \alpha_{z(t), g} - \beta\, u_g, \\
+\frac{d s_g}{dt} &= \beta\, u_g - \gamma\, s_g,
+\end{aligned}
+$$
+
+where $$\beta$$ is the splicing rate and $$\gamma$$ the degradation rate.
 
 ## Highlights
-- **Explicit state graphs** – build branching, cyclic, or linear topologies by supplying an adjacency mask or transition matrix; asymmetric rates let you encode directionality without extra coding.
-- **Dynamic transitions** – transition rates can be static (uniform or custom matrix) or **time- and state-dependent** via callbacks accepting `SimulationState`, enabling biologically realistic non-stationary dynamics.
-- **Stepwise simulation engine** – the `Simulation` class exposes the underlying state machine for fine-grained control when the high-level `simulate_dataset` interface is not enough.
-- **Customisable kinetics** – control gene-level marker assignments and reuse caps so neighbouring states share only the transcriptional programs you intend.
-- **Snapshot realism** – globally consistent splicing (`beta`) and decay (`gamma`) parameters pair with per-state production targets; dispersion tuning adds count noise when desired.
-- **Friendly outputs** – return AnnData objects for Scanpy workflows, pandas DataFrames for scripting, or persist directly to `.csv` and `.h5ad`.
+- **Explicit state graphs** – branching, cyclic, or linear lineage topologies, with asymmetric rates to encode directionality.
+- **Dynamic transitions** – transition rates can be static or time- and state-dependent for non-stationary dynamics.
+- **Cell proliferation** – cells can divide during the simulation, with lineage bookkeeping for each daughter.
+- **Tunable kinetics and noise** – per-state expression targets with global splicing/decay, plus optional negative-binomial count noise.
+- **Ready-to-use outputs** – AnnData for Scanpy, pandas DataFrames, or `.csv` / `.h5ad` files.
 
 ## Usage sketch
 ```python
@@ -31,7 +48,6 @@ params = SimulationParameters(
     t_final=30.0,
     dt=1.0,
     markers_per_state=120,
-    default_transition_rate=0.08,
     rng_seed=42,
 )
 
