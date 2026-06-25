@@ -2,6 +2,7 @@
 layout: page
 title: markovmodus
 description: Markov-modulated simulator for single-cell RNA velocity benchmarks
+img: assets/img/markovmodus.png
 category: geometric machine learning
 related_repositories: https://github.com/subthaumic/markovmodus
 ---

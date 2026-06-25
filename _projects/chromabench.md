@@ -2,6 +2,7 @@
 layout: page
 title: chromabench
 description: A minimal validation benchmark for chromatic topological data analysis
+img: assets/img/chromabench.png
 category: applied topology
 related_repositories: https://github.com/subthaumic/chromabench
 ---

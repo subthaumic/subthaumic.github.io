@@ -2,6 +2,7 @@
 layout: page
 title: Topological Recurrence Index
 description: Persistent-homology pipeline that flags emerging adaptive mutations in viral genomes
+img: assets/img/tri.png
 category: applied topology
 related_publications: Bleher2021
 ---
