@@ -72,6 +72,7 @@ wechat_qr: null
 contact_note: null
 google_analytics: null
 cronitor_analytics: null
+goatcounter_code: michael-bleher # -> https://michael-bleher.goatcounter.com/count
 google_site_verification: null
 bing_site_verification: null
 blog_name: null
@@ -126,6 +127,7 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - vendor
+- scripts
 keep_files:
 - CNAME
 - .nojekyll
@@ -240,6 +242,7 @@ imagemagick:
     webp: -quality 85
 enable_google_analytics: false
 enable_cronitor_analytics: false
+enable_goatcounter_analytics: true # cookieless, GDPR-friendly; only loads once goatcounter_code is set
 enable_google_verification: false
 enable_bing_verification: false
 enable_masonry: true
