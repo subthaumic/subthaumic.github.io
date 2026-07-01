@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Tea, Coffee, Cake & TDA
+title: Coffee, Cake, and TDA
 permalink: /projects/ep-math-data/tea-coffee-cake-and-tda/
 description: Talk series hosted by EP Mathematics and Data.
 # toc:
 #   sidebar: left
 ---
 
-Tea, Coffee, Cake & TDA is a talk series organised by the EP Mathematics and Data to provide a platform to present current work in topological data analysis.  
+Coffee, Cake, and TDA is a talk series organised by the EP Mathematics and Data to provide a platform to present current work in topological data analysis.  
 
 
 

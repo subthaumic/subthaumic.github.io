@@ -1,11 +1,11 @@
 ---
 layout: page
 title: The Clacks
-description: Subscribe to authors and articles on the arxiv (& biorxiv) - coming soon
+description: Subscribe to authors and articles on the arxiv - it works on my machine ¯\_(ツ)_/¯
 category: fun
 ---
 
-I've been annoyed by the huge amount of irrelevant new papers on the arxiv for a while now.
+I've been annoyed by the huge amount of irrelevant (to me) new papers on the arxiv for a while now.
 While Google Scholar helps keeping track of anyone who bothered setting up an account, I'm not quite happy with the alert system (in particular the fact that everything goes directly into my email inbox).
 
 Things got several orders of magnitude worse when I started switching my focus towards computer science and biology.

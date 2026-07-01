@@ -17,7 +17,7 @@ Michael Bleher, Lukas Hahn, Freya Jensen, Maximilian Schmahl, and Daniel Spitz.
 
 ## Workshops & Talk Series
 - [GTML 2025: Geometry, Topology, and Machine Learning](/events/gtml-2025/)
-- [Tea, Coffee, Cake and TDA](/projects/ep-math-data/tea-coffee-cake-and-tda/)
+- [Coffee, Cake, and TDA](/projects/ep-math-data/tea-coffee-cake-and-tda/)
 - [TMDA 2021: 2nd Workshop on Topological Methods in Data Analysis](/events/tmda-2021/).
 - [TMDA 2020: 1st Workshop on Topological Methods in Data Analysis](/events/tmda-2020/).
 

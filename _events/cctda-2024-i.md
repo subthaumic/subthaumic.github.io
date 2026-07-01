@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tea, Coffee, Cake & TDA
+title: Coffee, Cake, and TDA
 short_title: CCTDA
 sort_date: 2024-02-21
 date_display: 21 February 2024

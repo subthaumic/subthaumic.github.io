@@ -2,11 +2,10 @@
 layout: page
 title: Coffee, Cake, and TDA
 short_title: CCTDA
-sort_date: 2024-06-27
-date_display: 27 June 2024
+sort_date: 2026-05-06
+date_display: 6 May 2026
 location: Institute for Mathematics, Heidelberg
-talk_title: Cohomology classes in the RNA transcriptome
-speaker: Kelly Maggs
-redirect: https://structures.uni-heidelberg.de/news/files/2024_TCC_Juni.pdf
+talk_title: Social Trust and Disinformation Campaigns
+speaker: Felix Boes
 details: false # set to true if no website or event page is available, then you can add event details below
 ---
