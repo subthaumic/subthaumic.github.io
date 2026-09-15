@@ -10,7 +10,7 @@ related_repositories: https://github.com/subthaumic/chromabench
 `chromabench` is the simplest check that a topological method meant to read both the *shape* and the *colour distribution* of a point cloud actually does.
 
 It is a 2x2 family of two-colour point clouds: two spatial distributions, *uniform* or *cluster*, each with the two colours either *mixed* or *separated*.
-The mixed and separated versions are sampled from the **same** distribution, so only the colour distribution tells them apart.
+The mixed and separated versions of a layout reuse the **same** points, so only the colour distribution tells them apart.
 
 ## The task
 
@@ -40,4 +40,6 @@ print(evaluate(MyChromaticMethod(), ds)["score"])   # your colour-aware method
 A method is any object with `fit(samples, y)` and `predict(samples)`.
 
 ## Learn more
+- PyPI package: [pypi.org/project/chromabench](https://pypi.org/project/chromabench/)
 - Source code & issue tracker: [github.com/subthaumic/chromabench](https://github.com/subthaumic/chromabench)
+- Cite: [doi.org/10.5281/zenodo.22772348](https://doi.org/10.5281/zenodo.22772348)
