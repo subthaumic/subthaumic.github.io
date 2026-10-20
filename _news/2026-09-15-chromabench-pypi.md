@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[chromabench](https://github.com/subthaumic/chromabench) is now on PyPI (`pip install chromabench`) and citable via Zenodo.
+[chromabench](https://github.com/subthaumic/chromabench) is now on PyPI (`pip install chromabench`).
