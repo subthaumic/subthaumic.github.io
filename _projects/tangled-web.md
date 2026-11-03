@@ -7,21 +7,20 @@ related_publications:
 category: applied topology
 ---
 
-Neural nets don’t just light up single neurons for single ideas—they route computation through small, reusable subcircuits.  
-In this project I model those subcircuits as **directed simplicial complexes (DSCs)** so that feature representations become geometric and causal objects rather than blurry heatmaps.
+Neural nets don’t just light up single neurons for single ideas, they route computation through small, reusable subcircuits.  
+In this project I model those causal dependencies as **directed simplicial complexes (DSCs)** so that feature representations become geometric and causal objects.
 
 **Core idea.**  
-We can treat an MLP as a (non-stochastic) structural causal model and build DSCs from **coherent counterfactual ablations**: gently lowering the activation of a neuron (or a set of neurons) along valid activation trajectories and tracking which other neurons consistently respond.
-A directed simplex $$(P \to q)$$ is added when the ablation of predictors $$P$$ has a statistically consistent effect on target $$q$$ across a batch (Wilcoxon signed-rank on pre/post activation deltas).
+We can treat an MLP as a (non-stochastic) structural causal model and build DSCs from **coherent counterfactual ablations** by "gently" lowering the activation of a neuron (or a set of neurons) along valid activation trajectories and tracking which other neurons consistently respond.
+A directed simplex $$(P \to q)$$ is added when the ablation of predictors $$P$$ has a statistically consistent effect on target $$q$$ across a batch.
 
-**What this captures.**  
+**What I am trying to capture with this approach.**  
 - *Polysemanticity*: the same neuron appears in multiple directed simplices/complexes.  
-- *Polytopicity*: features spread over higher-dimensional directed motifs (not single units).  
-- *Directionality*: we encode influence, not just co-activation.
+- *Polytopicity*: features spread over higher-dimensional/higher-order structures.
+- *Directionality*: influence, not just co-activation.
 
 **How I study it.**  
-Small, controlled testbeds (quadrant classifiers; MNIST MLPs).  
-I enumerate DSCs from activations + gradients, then compare **simplicial dimension, connectivity, recurrence, and symmetry**, and probe **causal directionality** via ablations/interventions. Filtration values (e.g. time-to-significance) let the complex “grow” so we can watch motifs assemble.
+DSCs are built from the observed activations for a given set of inputs, and then the influence of lowering the activation of a neuron (or set of neurons) is measured by the change in activation of other neurons. This allows us to construct a directed simplicial complex that captures the causal relationships between neurons in the network, across various layers, backwards and forwards, and in different contexts.
 
 **Toy result (quadrants).**  
 A “monosemantic” network yields clean, compositional DSCs: axes detectors combine into quadrant motifs.  
@@ -29,9 +28,9 @@ A bottlenecked “polysemantic” variant shows overlapping motifs and inhibitor
 
 **Why it matters.**  
 This bridges interpretability, causal inference, and TDA.  
-We get compact, comparable summaries of *which group of neurons does what, in which direction, under which context*.
+We get summaries of *which group of neurons does what, in which direction, under which context*, collecting neuron behaviour across the whole network.
 
 **Further reading & status.**  
-Longer story and motivation in my blog post: [The Tangled Web They Weave](https://open.substack.com/pub/subthaumic/p/the-tangled-web-they-weave).  
-[Early manuscript here](assets/man/tangled-web.pdf); submitted to NeurIPS 2025, not accepted. But I got some great feedback (that remains to be included).
-As always, feedback and collaboration welcome!
+An informal description is available in my blog post: [The Tangled Web They Weave](https://open.substack.com/pub/subthaumic/p/the-tangled-web-they-weave).  
+Preprint on [arXiv](https://arxiv.org/abs/2611.00786); code, networks and results are in [neural-dsc](https://github.com/subthaumic/neural-dsc).
+As always, feedback very much welcome!
