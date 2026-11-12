@@ -4,7 +4,7 @@ title: MuRiT
 description: Ripser add-on for pathwise exploration of multi-persistence in filtered clique complexes
 img: assets/img/paths.gif
 related_publications: Neumann2022
-related_repositories: https://github.com/tdalife/murit
+related_repositories: https://github.com/subthaumic/murit
 category: applied topology
 ---
 
@@ -49,5 +49,5 @@ MuRiT writes `figure8_path01.ripser`, `figure8_path02.ripser`, … with Ripser o
 - Automating feature-stability studies across many paths through the same complex.
 
 ## Learn more and cite
-- Source code & releases: [github.com/tdalife/murit](https://github.com/tdalife/murit)
+- Source code & releases: [github.com/subthaumic/murit](https://github.com/subthaumic/murit)
 - Preprint: Maximilian Neumann *et al.* "MuRiT: Efficient Computation of Pathwise Persistence Barcodes in Multi-Filtered Flag Complexes via Vietoris-Rips Transformations," arXiv:2207.03394.
